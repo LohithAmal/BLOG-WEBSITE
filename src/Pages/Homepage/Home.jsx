@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../Header/Header";
-import Post from "../../Posts/Post";
-import Sidebar from "../../Sidebar/Sidebar";
+import Header from "../../../src/components/Header/Header";
+import Posts from "../../components/Posts/Posts";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Home.css";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header />
       <div className="home">
-        <Post />
+        <Posts />
         <Sidebar />
       </div>
     </>

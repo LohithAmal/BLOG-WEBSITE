@@ -1,5 +1,5 @@
 import React from "react";
-import HomeImage from "../Assets/home-2.jpg";
+import HomeImage from "../../Assets/home-2.jpg";
 import "./Header.css";
 export default function Header() {
   return (

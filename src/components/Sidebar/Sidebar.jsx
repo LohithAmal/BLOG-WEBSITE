@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import About from "../../src/Assets/about.jpg";
+import About from "../../Assets/about.jpg";
 
 function Sidebar() {
   return (
