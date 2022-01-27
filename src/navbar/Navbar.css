@@ -43,7 +43,8 @@
   text-transform: uppercase;
   margin-right: 20px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
+  color: black;
   cursor: pointer;
 }
 .top-searchIcon {
