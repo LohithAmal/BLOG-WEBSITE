@@ -13,10 +13,11 @@ const Login = () => {
         <input type="text" placeholder="enter your password..." />
         <button className="login-btn">Login</button>
       </form>
-      <button className="login-register-btn">Register</button>
-      <Link className="link" to="/register">
-        Register
-      </Link>
+      <button className="login-register-btn">
+        <Link className="link " to="/register">
+          Register
+        </Link>
+      </button>
     </div>
   );
 };

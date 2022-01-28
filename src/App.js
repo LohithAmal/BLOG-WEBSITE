@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Singlepost from "./components/Singlepost/Singlepost";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <div className="App">
       <Router>
@@ -20,11 +20,19 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/register">{user ? <Home /> : <Register />}</Route>
-          <Route path="/login">{user ? <Home /> : <Login />}</Route>
-          <Route path="/write">{user ? <Write /> : <Register />}</Route>
-          <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
-          <Route path="/post/:postId">
+          <Route exact path="/register">
+            {user ? <Home /> : <Register />}
+          </Route>
+          <Route exact path="/login">
+            {user ? <Home /> : <Login />}
+          </Route>
+          <Route exact path="/write">
+            {user ? <Write /> : <Register />}
+          </Route>
+          <Route exact path="/settings">
+            {user ? <Settings /> : <Register />}
+          </Route>
+          <Route exact path="/post/:postId">
             <Single />
           </Route>
         </Switch>
